@@ -1,10 +1,14 @@
 services:
   - type: web
-    name: tainan-open-data-viewer
+    name: tainan-open-data-pwa
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
+    healthCheckPath: /healthz
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
+      # 可選:更換資料來源 CSV 連結
+      # - key: DATA_URL
+      #   value: https://data.tainan.gov.tw/File/ResourceCsvDownload/xxxx

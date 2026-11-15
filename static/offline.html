@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>目前離線</title>
+<style>
+  body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f8fafc;
+       font-family:system-ui,"Noto Sans TC",sans-serif;color:#0f172a;text-align:center;padding:24px}
+  .box{max-width:360px}
+  img{width:88px;height:88px;border-radius:20px;box-shadow:0 6px 18px rgba(37,99,235,.3)}
+  h1{font-size:1.4rem;margin:18px 0 8px}
+  p{color:#64748b;line-height:1.6;margin:0 0 20px}
+  button{background:#2563eb;color:#fff;border:0;border-radius:10px;padding:12px 22px;font-size:1rem}
+</style>
+</head>
+<body>
+  <div class="box">
+    <img src="/static/icons/icon-192.png" alt="">
+    <h1>目前沒有網路連線</h1>
+    <p>台南市開放資料需要網路才能載入。請確認連線後再試一次。</p>
+    <button onclick="location.reload()">重新載入</button>
+  </div>
+</body>
+</html>
